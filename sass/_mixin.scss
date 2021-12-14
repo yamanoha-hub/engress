@@ -1,0 +1,40 @@
+@import "_base";
+
+// ============================================
+// メディアクエリ
+// ============================================
+$breakpoints: (
+  l: "screen and (max-width: 1600px)", //PC
+  m: "screen and (max-width: 1280px)", //タブレット
+  s: "screen and (max-width: 599px)",  //スマートフォン
+);
+@mixin media($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin btnSet {
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 1rem;
+  text-align: center;
+  color: $color-Wh;
+}
+
+@mixin section-ttl {
+  .section__ttl {
+    text-align: center;
+    h2 {
+      margin-top: 20px;
+      font-size: 36px;
+      @include media(m) {
+        font-size: 32px;   
+      }
+    }
+  }
+}
+

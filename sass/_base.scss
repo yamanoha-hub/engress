@@ -1,0 +1,58 @@
+// =============================================
+// 変数
+// =============================================
+$font-Color: #1B224C;;
+$bg-Color: #1B224C;
+$bg-subColor: #F5A623;
+$color-Wh: #fff;
+
+// ============================================
+// ベース
+// ============================================
+body {
+  color: $font-Color;
+  font-weight: bold;
+}
+
+p {
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+	text-decoration: none;
+  color: $font-Color;
+}
+a:hover {
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+// モジュール パーツ
+.top-bg {
+  // background-image: url(../images/mainbg01.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.room-bg {
+  // background-image: url(../images/oheya-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menu-bg {
+  // background-image: url(../images/menu-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.spa-bg {
+  // background-image: url(../images/onsen-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

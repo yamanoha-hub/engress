@@ -1,3 +1,147 @@
-body {
-  color: #333;
+@import "_mixin";
+
+// 表示崩れ見るため
+// * {
+//   outline: 2px solid blue;
+// }
+
+
+.header {
+  width: 100%;
+  z-index: 1000;
+  &__inner {
+    max-width: 1280px;
+    height: 80px;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+  }
+  &-nav {
+    margin-left: 28px;
+    ul {
+      display: flex;
+      li {
+        font-size: 16px;
+        margin-right: 28px;
+        
+      }
+    }
+  }
+  &__right {
+    margin-left: auto;
+    display: flex;
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      p:nth-child(1) {
+        font-size: 12px;
+      }
+      &-tel {
+        display: flex;
+        margin-top: 10px;
+        .tel {
+          font-size: 16px;
+          margin-left: 5px;
+          font-weight: bold
+        }
+      }
+    }
+    .document-btn {
+      @include btnSet;
+      width: 142px;
+      border-radius: 5px;
+      background-color: $bg-subColor;
+      margin-right: 10px;
+      margin-left: 23px;
+      font-size: 14px;
+    }
+    .contact-btn {
+      @include btnSet;
+      width: 137px;
+      border-radius: 5px;
+      background-color: $bg-Color;
+      font-size: 14px;
+    }
+  }
 }
+
+.fv {
+  background-image: url(../images/fv.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__inner {
+    padding-top: 116px;
+    padding-bottom: 86px;
+    text-align: center;
+    color: $color-Wh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__ttl {
+    font-size: 48px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.7222222;
+    margin-top: 25px - 6.5px;
+    margin-bottom: 51px  - 6.5px;
+  }
+  .document-btn {
+    @include btnSet;
+    width: 260px;
+    border-radius: 31px;
+    background-color: $bg-subColor;
+    font-size: 16px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .contact {
+    color: $color-Wh;
+    font-weight: normal;
+    border-bottom: 1px solid $color-Wh;
+    margin-top: 22px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
