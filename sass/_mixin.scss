@@ -29,7 +29,6 @@ $breakpoints: (
   .section__ttl {
     text-align: center;
     h2 {
-      margin-top: 20px;
       font-size: 36px;
       @include media(m) {
         font-size: 32px;   

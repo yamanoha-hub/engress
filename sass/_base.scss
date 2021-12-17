@@ -1,8 +1,8 @@
 // =============================================
 // 変数
 // =============================================
-$font-Color: #1B224C;;
-$bg-Color: #1B224C;
+$font-Color: #1B224C;
+$site-Color: #1B224C;
 $bg-subColor: #F5A623;
 $color-Wh: #fff;
 
@@ -12,6 +12,8 @@ $color-Wh: #fff;
 body {
   color: $font-Color;
   font-weight: bold;
+  font-family: "游ゴシック体", 'YuGothic', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+
 }
 
 p {
@@ -56,3 +58,4 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
+
