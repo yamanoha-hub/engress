@@ -508,8 +508,140 @@
   }
 }
 
+.cta {
+  &__inner {
+    background-image: url(../images/cta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    padding-bottom: 41.4px;
+    text-align: center;
+    color: $color-Wh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__ttl {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+  .document-btn {
+    @include btnSet;
+    width: 260px;
+    border-radius: 31px;
+    background-color: $bg-subColor;
+    font-size: 16px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .contact {
+    color: $color-Wh;
+    font-weight: normal;
+    border-bottom: 1px solid $color-Wh;
+    margin-top: 22px;
+  }
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 108px;
+    box-sizing: border-box;
+    height: 80px;
+    padding-bottom: 25.7px;
+    h3 {
+      font-size: 16px;
+    }
+    span {
+      font-size: 36px;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: -2px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
 
+.footer {
+  padding-top: 35px;
+  padding-bottom: 68px;
+  background-color: $site-Color;
+  padding-left: 9px;
+  &__inner {
+    width: 100%;
+    max-width: 917px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+  }
 
+  &__nav {
+    display: flex;
+    &__item {
+      padding-right: 21px;
+      margin-right: 21px;
+      border-right: solid 1px #fff;
+      font-size: 16px;
+      height: 23px;
+      a {
+        line-height: 23px;
+        color: $color-Wh;
+      }
+    }
+    &__item:nth-child(4) {
+      border-right: none;
+    }
+  }
+  &__right {
+    color: $color-Wh;
+    margin-left: auto;
+    &__logo {
+      background-color: #fff;
+      padding-top: 14px;
+      padding-bottom: 13px;
+      padding-right: 19px;
+      padding-left: 19px;
+      text-align: center;
+      margin-bottom: 27px;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      p:nth-child(1) {
+        font-size: 12px;
+        margin-top: 13px;
+      }
+      &-tel {
+        display: flex;
+        .tel {
+          margin-left: 7px;
+          font-size: 16px;
+          font-weight: bold
+        }
+      }
+    }
+  }
+}
+
+.copy {
+  padding-left: 9px;
+  &__inner {
+    width: 100%;
+    max-width: 917px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: right;
+    span {
+      font-size: 12px;
+      margin-right: auto;
+      margin-left: auto;
+      line-height: 36px;
+    }
+  }
+}
 
 
 
