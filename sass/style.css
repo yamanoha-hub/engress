@@ -615,17 +615,6 @@ a:hover {
 .flow__box {
   width: 900px;
   margin-top: 53px;
-  position: relative;
-}
-
-.flow__box::before {
-  background-color: #C3C3C3;
-  content: "";
-  width: 1px;
-  height: 29.03px;
-  position: absolute;
-  top: 16.9px;
-  left: 279px;
 }
 
 .flow__box__item {
@@ -639,6 +628,21 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.flow__box__item::before {
+  background-color: #C3C3C3;
+  content: "";
+  width: 1px;
+  height: 29.03px;
+  position: absolute;
+  top: 16.9px;
+  left: 279px;
+}
+
+.flow__box__item:nth-child(4) {
+  margin-bottom: 0;
 }
 
 .flow__box__item span {
@@ -659,5 +663,71 @@ a:hover {
 
 .flow__box__item p {
   padding-left: 53px;
+}
+
+.faq {
+  margin-bottom: 90.2px;
+}
+
+.faq__inner {
+  width: 100%;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq__inner .section__ttl {
+  text-align: center;
+}
+
+.faq__inner .section__ttl h2 {
+  font-size: 36px;
+}
+
+@media screen and (max-width: 1280px) {
+  .faq__inner .section__ttl h2 {
+    font-size: 32px;
+  }
+}
+
+.faq__box {
+  width: 900px;
+  margin-top: 32px;
+  border-bottom: 1px solid #1B224C;
+}
+
+.faq__box__item {
+  border-top: 1px solid #1B224C;
+  position: relative;
+}
+
+.faq__box__item-text {
+  height: 65px;
+  position: relative;
+  top: 28px;
+}
+
+.faq__box__item .accordion {
+  padding-top: 17.5px;
+  padding-bottom: 20.5px;
+  background-color: #F8F8F8;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.faq__box__item .accordion p {
+  padding-left: 26px;
+  padding-right: 26px;
+  line-height: 1.6875;
 }
 /*# sourceMappingURL=style.css.map */
