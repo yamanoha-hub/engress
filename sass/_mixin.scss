@@ -36,6 +36,7 @@ $breakpoints: (
     }
   }
 }
+
 @mixin section-sub-ttl {
   .section__ttl {
     text-align: center;
@@ -171,4 +172,32 @@ $breakpoints: (
   }
 }
 
+@mixin faq-plus-btn {
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 32px;
+    right: 25px;
+    background-color: $site-Color;
+    width: 25px;
+    height: 3px;
+    transition: .2s;
+    transform: rotate(90deg);
+  }
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 32px;
+    right: 25px;
+    width: 25px;
+    height: 3px;
+    background-color: $site-Color;
+  }
+  &.on::before {
+    transform: rotate(0deg);
+  }
+
+}
 

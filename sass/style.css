@@ -718,6 +718,37 @@ a:hover {
   border-bottom: 1px solid #1B224C;
 }
 
+.faq__box .plus::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: 25px;
+  background-color: #1B224C;
+  width: 25px;
+  height: 3px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.faq__box .plus::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: 25px;
+  width: 25px;
+  height: 3px;
+  background-color: #1B224C;
+}
+
+.faq__box .plus.on::before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 .faq__box__item {
   border-top: 1px solid #1B224C;
   position: relative;
@@ -735,6 +766,7 @@ a:hover {
   background-color: #F8F8F8;
   margin-bottom: 15px;
   position: relative;
+  display: none;
 }
 
 .faq__box__item .accordion p {

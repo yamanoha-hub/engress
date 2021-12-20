@@ -419,9 +419,14 @@
     width: 900px;
     margin-top: 32px;
     border-bottom: 1px solid $site-Color;
+    .plus {
+      @include faq-plus-btn;
+    }
     &__item {
       border-top: 1px solid $site-Color;
       position: relative;
+      // transition: all .9s;
+
       &-text {
         height: 65px;
         position: relative;
@@ -433,6 +438,7 @@
         background-color: #F8F8F8;
         margin-bottom: 15px;
         position: relative;
+        display: none;
         p {
           padding-left: 26px;
           padding-right: 26px;
