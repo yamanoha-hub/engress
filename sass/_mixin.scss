@@ -36,6 +36,17 @@ $breakpoints: (
     }
   }
 }
+@mixin section-sub-ttl {
+  .section__ttl {
+    text-align: center;
+    h2 {
+      font-size: 32px;
+      @include media(m) {
+        font-size: 28px;   
+      }
+    }
+  }
+}
 
 @mixin check {
   &::before {
@@ -156,7 +167,8 @@ $breakpoints: (
     .current {
       background-color: $site-Color;
       color: $color-Wh;
-
     }
   }
 }
+
+

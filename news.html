@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <!--- 検索結果に表示しない --->
+  <meta name=“robots” content=“noindex”> 
+  <!--- ファビコン --->
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="sass/reset.css">
+  <link rel="stylesheet" href="sass/style.css">
+
+
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <img src="images/logo.png" alt="ロゴ">
+      </h1>
+      <!-- /.header__logo -->
+      <nav class="header-nav">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="news.html">お知らせ</a></li>
+          <li><a href="blog.html">ブログ</a></li>
+          <li><a href="plan.html">コース・料金</a></li>
+        </ul>
+      </nav>
+      <!-- /.header-nav -->
+      <div class="header__right">
+        <div class="header__right__info">
+          <p class="">平日08:00〜20:00</p>
+          <div class="header__right__info-tel">
+            <img src="images/phone-logo.jpg" alt="電話アイコン">
+            <p class="tel">0123-456-7890</p>
+          </div>
+          <!-- /.header__right__info-tel -->
+        </div>
+        <!-- /.header__right__info -->
+        <a href="#" class="document-btn btn">資料請求</a>
+        <a href="#" class="contact-btn btn">お問い合わせ</a>
+      </div>
+      <!-- /.header__right -->
+    </div>
+    <!-- /.header__inner -->
+  </header>
+  <main>
+    <section class="sv news-bg">
+      <div class="sv__ttl">
+        <h2>お知らせ</h2>
+      </div>
+      <!-- /.section-title -->      
+    </section>
+    <!-- /.sv -->
+    <section class="breadcrumb">
+      <div class="breadcrumb__inner">
+        <div class="breadcrumb__parts">
+          <a href="index.html">ホーム</a>
+          <p>＞</p>
+          <p>お知らせ</p>
+        </div>
+        <!-- /.breadcrumb__parts -->
+      </div>
+      <!-- /.breadcrumb__inner -->
+    </section>
+    <!-- /.breadcrumb -->
+
+    <section class="news-area">
+      <div class="news-area__inner">
+        <div class="section__ttl">
+          <h2>お知らせ一覧</h2>
+        </div>
+
+        <table class="news-area__table">
+          <tbody>
+            <tr>
+              <th>2020-12-30</th>
+              <td><a href="#">お知らせのタイトルテキストテキストテキストテキストテキストテキストテキスト</a></td>
+            </tr>
+            <tr>
+              <th>2020-12-20</th>
+              <td><a href="#">お知らせのタイトルテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</a></td>
+            </tr>
+            <tr>
+              <th>2020-12-01</th>
+              <td><a href="#">お知らせのタイトルテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</a></td>
+            </tr>
+            <tr>
+              <th>2020-11-21</th>
+              <td><a href="#">お知らせのタイトルテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</a></td>
+            </tr>
+            <tr>
+              <th>2020-11-20</th>
+              <td><a href="#">お知らせのタイトルテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</a></td>
+            </tr>
+            <tr>
+              <th>2020-11-13</th>
+              <td><a href="#">お知らせのタイトルテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</a></td>
+            </tr>
+            <tr>
+              <th>2020-11-11</th>
+              <td><a href="#">お知らせのタイトルテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</a></td>
+            </tr>
+            <tr>
+              <th>2020-11-09</th>
+              <td><a href="#">お知らせのタイトルテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</a></td>
+            </tr>
+            <tr>
+              <th>2020-11-06</th>
+              <td><a href="#">お知らせのタイトルテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</a></td>
+            </tr>
+            <tr>
+              <th>2020-11-04</th>
+              <td><a href="#">お知らせのタイトルテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</a></td>
+            </tr>
+          </tbody>
+
+
+        </table>
+        <!-- /.news-area__table -->
+
+        <div class="news-area__tile">
+          <ul class="tile-btn">
+            <li><a href="#" class="current">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li>…</li>
+            <li><a href="#">5</a></li>
+          </ul>
+        </div>
+        <!-- /.blog-area__tile -->        
+      </div>
+      <!-- /.news-area__inner -->
+    </section>
+    <!-- /.news-area -->
+
+    <section class="cta">
+      <div class="cta__inner">
+        <div class="cta__ttl">
+          <h2>まずは無料で資料請求から</h2>
+        </div>
+        <!-- /.cta-ttl -->
+        <a href="#" class="document-btn">資料請求</a>
+        <a href="#" class="contact">お問い合わせ</a>
+      </div>
+      <!-- /.cta__inner -->
+      <div class="cta__info">
+        <h3>お電話でのお問い合わせはこちら</h3>
+        <span>0123-456-7890</span>
+        <p>平日  08:00~20:00</p>
+      </div>
+      <!-- /.cta__part -->
+    </section>
+    <!-- /.cta -->
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <ul class="footer__nav">
+        <li class="footer__nav__item">
+          <a href="index.html">ホーム</a>
+        </li>
+        <li class="footer__nav__item">
+          <a href="#">お知らせ</a>
+        </li>
+        <li class="footer__nav__item">
+          <a href="blog.html">ブログ</a>
+        </li>
+        <li class="footer__nav__item">
+          <a href="plan.html">コース・料金</a>
+        </li>
+      </ul>
+      <!-- /.footer__nav -->
+
+      <div class="footer__right">
+        <img src="images/logo.png" class="footer__right__logo" alt="ロゴ">
+        <div class="footer__right__info">
+          <p class="">平日08:00〜20:00</p>
+          <div class="footer__right__info-tel">
+            <img src="images/phone.png" alt="電話アイコン">
+            <p class="tel">0123-456-7890</p>
+          </div>
+          <!-- /.footer__right__info-tel -->
+        </div>
+        <!-- /.footer__right__info -->
+      </div>
+      <!-- /.footer__right -->
+    </div>
+    <!-- /.footer__inner -->
+  </footer>
+  <!-- /.footer -->
+
+  <div class="copy">
+    <div class="copy__inner">
+      <span>&copy; 2020 Engress.</span>
+    </div>
+    <!-- /.copy__inner -->
+  </div>
+  <!-- /.copy -->
+
+  <script src="js/script.js"></script>
+</body>
+</html>
