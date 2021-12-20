@@ -104,7 +104,7 @@
   .contact {
     color: $color-Wh;
     font-weight: normal;
-    border-bottom: 1px solid $color-Wh;
+    text-decoration: underline;
     margin-top: 22px;
   }
 }
@@ -217,9 +217,13 @@
         }
         h3 {
           font-size: 26px;
+          line-height: 1.5;
+          margin-top: 35px - 6.5px;
+          margin-bottom: 39px - 6.5px - 5.5px;
         }
         p {
           font-size: 16px;
+          line-height: 1.6875;
         }
       }
       img {
@@ -258,6 +262,7 @@
         @include btnSet;
         width: 200px;
         border-radius: 30px;
+        border: solid 1px #fff;
       }
     }
   }
@@ -480,6 +485,7 @@
         h3 {
           font-size: 16px;
           line-height: 1.6875;
+          text-decoration: underline;
         }
       }
     }
@@ -500,6 +506,7 @@
         height: 59px;
         font-size: 16px;
         line-height: 1.6875;
+        text-decoration: underline;
       }
     }
   }
@@ -537,7 +544,7 @@
   .contact {
     color: $color-Wh;
     font-weight: normal;
-    border-bottom: 1px solid $color-Wh;
+    text-decoration: underline;
     margin-top: 22px;
   }
   &__info {
@@ -644,6 +651,113 @@
 }
 
 
+// plan.html
+.breadcrumb {
+  background-color: #F8F8F8;
+  &__inner {
+    width: 100%;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__parts {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    a {
+      margin-right: 6px;
+      text-decoration: underline;
+    }
+  }
+}
+
+.sv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__ttl {
+    color: $color-Wh;
+    font-size: 32px;
+  }
+}
+
+.plan-area {
+  padding-top: 58px;
+  padding-bottom: 62px;
+  &__inner {
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    @include section-ttl;
+  }
+  &__info {
+    padding-bottom: 90px - 5.5px;
+    &__item {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      &::before {        
+        display: block;
+        content: "";
+        position: absolute;
+        top:0; 
+        right:0;
+        bottom:0;
+        left:0;
+        margin:auto;
+        background-color: $site-Color;
+        width: 19.06px;
+        height: 2px;
+        transition: .2s;
+        transform: rotate(90deg);
+      }
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 18.81px;
+        height: 2px;
+        background-color: $site-Color;
+      }
+      span {
+        width: 280px;
+        height: 90px;
+        background-color: $site-Color;
+        color: $color-Wh;
+        font-size: 22px;
+        text-align: center;
+        line-height: 90px;
+        &:nth-child(1) {
+          margin-right: 96px;
+        }
+        &:nth-child(2) {
+          margin-right: 6px;
+        }
+      }
+    }
+    &__text {
+      margin-top: 45.8px - 5.5px;
+      line-height: 1.6875;
+    }
+  }
+  &__menu {
+    &-flex {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 70px;
+    }
+    @include plan-menu;
+  }
+}
 
 
 
