@@ -24,6 +24,10 @@ ul {
   list-style: none;
 }
 
+img {
+  object-fit: cover;
+}
+
 a {
 	text-decoration: none;
   color: $font-Color;
@@ -55,11 +59,10 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-.spa-bg {
+.contact-bg {
   height: 221px;
-  // background-image: url(../images/onsen-header.png);
+  background-image: url(../images/contact.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-

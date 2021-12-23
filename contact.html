@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <!--- 検索結果に表示しない --->
+    <meta name=“robots” content=“noindex”>
+    <!--- ファビコン --->
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="sass/reset.css">
+    <link rel="stylesheet" href="sass/style.css">
+
+
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <img src="images/logo.png" alt="ロゴ">
+        </h1>
+        <!-- /.header__logo -->
+        <nav class="header-nav">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="news.html">お知らせ</a></li>
+            <li><a href="blog.html">ブログ</a></li>
+            <li><a href="plan.html">コース・料金</a></li>
+          </ul>
+        </nav>
+        <!-- /.header-nav -->
+        <div class="header__right">
+          <div class="header__right__info">
+            <p class="">平日08:00〜20:00</p>
+            <div class="header__right__info-tel">
+              <img src="images/phone-logo.jpg" alt="電話アイコン">
+              <p class="tel">0123-456-7890</p>
+            </div>
+            <!-- /.header__right__info-tel -->
+          </div>
+          <!-- /.header__right__info -->
+          <a href="#" class="document-btn btn">資料請求</a>
+          <a href="#" class="contact-btn btn">お問い合わせ</a>
+        </div>
+        <!-- /.header__right -->
+      </div>
+      <!-- /.header__inner -->
+    </header>
+
+    <main>
+      <section class="sv contact-bg">
+        <div class="sv__ttl">
+          <h2>お問い合わせ・資料請求</h2>
+        </div>
+        <!-- /.section-title -->
+      </section>
+      <!-- /.sv -->
+      <section class="breadcrumb">
+        <div class="breadcrumb__inner">
+          <ul class="breadcrumb__parts">
+            <li>
+              <a href="index.html">ホーム</a>
+            </li>
+            <li>
+              <p>お問い合わせ</p>
+            </li>
+          </ul>
+          <!-- /.breadcrumb__parts -->
+        </div>
+        <!-- /.breadcrumb__inner -->
+      </section>
+      <!-- /.breadcrumb -->
+
+      <section class="contact-area">
+        <div class="contact-area__inner">
+          <p class="contact-message">弊社に興味を持って頂きありがとうございます。商談やサービスのご利用、資料請求について下記のフォームよりお問い合わせください。</p>
+
+          <form action="" method="get" class="form">
+            <p class="form-ttl">会社名</p>
+            <input type="text" placeholder="Engress">
+            <p class="form-ttl">氏名</p>
+            <input type="text" placeholder="田中  太郎">
+            <p class="form-ttl">メールアドレス</p>
+            <input type="text" placeholder="example@example.com">
+            <p class="form-ttl">電話番号</p>
+            <input type="text" placeholder="01-2345-6789">
+
+            <p>お問い合わせの種類を選択してください（<span>資料請求の方は資料請求を選択ください</span>）</p>
+
+            <div class="radio-btn">
+              <div class="radio-btn__item">
+                <input type="radio">
+                <p>商談のご相談</p>
+              </div>
+              <!-- /.radio-btn__item -->
+              <div class="radio-btn__item">
+                <input type="radio">
+                <p>サービスに関するお問い合わせ</p>
+              </div>
+              <!-- /.radio-btn__item -->
+              <div class="radio-btn__item">
+                <input type="radio">
+                <p>資料請求</p>
+              </div>
+              <!-- /.radio-btn__item -->
+              <div class="radio-btn__item">
+                <input type="radio">
+                <p>その他</p>
+              </div>
+              <!-- /.radio-btn__item -->
+            </div>
+            <!-- /.radio-btn -->
+
+
+            <p class="form-ttl">お問い合わせ内容</p>
+            <textarea required placeholder="入力して下さい"></textarea>
+
+            <div class="form__magu">
+              <p>
+                <a href="#">プライバシーポリシー</a>に同意の上、送信ください。
+              </p>
+              <div class="form__magu__agree">
+                <input type="checkbox">
+                <p class="privacy">プライバシーポリシーに同意する</p>
+              </div>
+              <!-- /.form__magu__agree -->
+
+              <input type="submit" value="送信する" class="contact-btn submit-btn" disabled>
+            </div>
+            <!-- /.form__magu -->
+          </form>
+        </div>
+        <!-- /.contact-area__inner -->
+      </section>
+      <!-- /.contact-area -->
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <ul class="footer__nav">
+          <li class="footer__nav__item">
+            <a href="index.html">ホーム</a>
+          </li>
+          <li class="footer__nav__item">
+            <a href="#">お知らせ</a>
+          </li>
+          <li class="footer__nav__item">
+            <a href="blog.html">ブログ</a>
+          </li>
+          <li class="footer__nav__item">
+            <a href="plan.html">コース・料金</a>
+          </li>
+        </ul>
+        <!-- /.footer__nav -->
+
+        <div class="footer__right">
+          <img src="images/logo.png" class="footer__right__logo" alt="ロゴ">
+          <div class="footer__right__info">
+            <p class="">平日08:00〜20:00</p>
+            <div class="footer__right__info-tel">
+              <img src="images/phone.png" alt="電話アイコン">
+              <p class="tel">0123-456-7890</p>
+            </div>
+            <!-- /.footer__right__info-tel -->
+          </div>
+          <!-- /.footer__right__info -->
+        </div>
+        <!-- /.footer__right -->
+      </div>
+      <!-- /.footer__inner -->
+    </footer>
+    <!-- /.footer -->
+
+    <div class="copy">
+      <div class="copy__inner">
+        <span>&copy; 2020 Engress.</span>
+      </div>
+      <!-- /.copy__inner -->
+    </div>
+    <!-- /.copy -->
+
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
