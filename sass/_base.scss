@@ -13,7 +13,6 @@ body {
   color: $font-Color;
   font-weight: bold;
   font-family: "游ゴシック体", 'YuGothic', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-
 }
 
 p {
@@ -36,6 +35,21 @@ a:hover {
   opacity: 0.6;
   transition: 0.5s;
 }
+
+// ============================================
+// メディアクエリ
+// ============================================
+$breakpoints: (
+  l: "screen and (max-width: 1600px)", //PC
+  m: "screen and (max-width: 1280px)", //タブレット
+  s: "screen and (max-width: 599px)",  //スマートフォン
+);
+@mixin media($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
 
 // モジュール パーツ
 .plan-bg {

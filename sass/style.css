@@ -1764,6 +1764,12 @@ a:hover {
   right: 6px;
 }
 
+@media screen and (max-width: 1280px) {
+  .breadcrumb {
+    padding-left: 30px;
+  }
+}
+
 .sv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1783,6 +1789,18 @@ a:hover {
 .sv__ttl {
   color: #fff;
   font-size: 32px;
+}
+
+@media screen and (max-width: 1280px) {
+  .sv__ttl {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .sv__ttl {
+    font-size: 24px;
+  }
 }
 
 .plan-area {
@@ -2096,6 +2114,55 @@ a:hover {
   max-width: 240px;
 }
 
+@media screen and (max-width: 1280px) {
+  .blog-area__box {
+    margin-top: 30px;
+    height: 100%;
+  }
+  .blog-area__box img {
+    max-width: 200px;
+  }
+  .blog-area__box__text {
+    margin-left: 20px;
+  }
+  .blog-area__box__text h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 1.25;
+  }
+  .blog-area__box__text .post {
+    line-height: 1.5;
+  }
+  .blog-area__box:nth-child(2) {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    height: 170px;
+  }
+  .blog-area__box:nth-child(2) img {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .blog-area__box {
+    margin-top: 30px;
+  }
+  .blog-area__box__text {
+    margin-left: 10px;
+  }
+  .blog-area__box__text h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .blog-area__box__text .post {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
 .blog-area__tile {
   margin-top: 106px;
   padding-right: 3px;
@@ -2154,6 +2221,13 @@ a:hover {
 .blog-area__tile .tile-btn .current {
   background-color: #1B224C;
   color: #fff;
+}
+
+@media screen and (max-width: 599px) {
+  .blog-area__tile .tile-btn li {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .news-area {
@@ -2273,6 +2347,13 @@ a:hover {
 .news-area__tile .tile-btn .current {
   background-color: #1B224C;
   color: #fff;
+}
+
+@media screen and (max-width: 599px) {
+  .news-area__tile .tile-btn li {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .contact-area {
