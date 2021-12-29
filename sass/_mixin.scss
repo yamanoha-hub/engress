@@ -31,7 +31,10 @@ $breakpoints: (
     h2 {
       font-size: 36px;
       @include media(m) {
-        font-size: 32px;   
+        font-size: 30px;
+      }
+      @include media(m) {
+        font-size: 24px;
       }
     }
   }
@@ -270,3 +273,51 @@ $breakpoints: (
   
 }
 
+@mixin hamburgerMenu {
+  display: none;
+  @include media(m) {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+    border: solid 1px $site-Color;
+    background-color: #fff;
+    margin-left: auto;
+    span {
+      display: inline-block;
+      position: absolute;
+      transition: all .4s;
+      left: 13px;
+      height: 3px;
+      background-color: $site-Color;
+      border-radius: 2px;
+      width: 25px;
+      &:nth-of-type(1) {
+        top: 15px; 
+      }
+      &:nth-of-type(2) {
+        top: 23px;
+      }
+      &:nth-of-type(3) {
+        top: 32px;
+      }
+    }
+    &__active span:nth-of-type(1) {
+      top: 18px;
+      left: 12px;
+      transform: translateY(6px) rotate(-45deg);
+      width: 26px;
+    }
+    &__active span:nth-of-type(2) {
+      opacity: 0; //消す
+    }
+    &__active span:nth-of-type(3){
+      top: 30px;
+      left: 12px;
+      transform: translateY(-6px) rotate(45deg);
+      width: 26px;
+    }
+  }
+}
